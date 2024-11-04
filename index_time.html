@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style_time.css">
+</head>
+<body>
+    <h1>Online Rock Paper Scissors Game</h1>
+    <div class="step" id="step1">
+        <p id="choice-msg">Choose your move:</p>
+        <div id="choice">
+            <img class="img_masking" id="rock" src="https://brightsunp.github.io/web_practice/node/images/left_fist.png">
+            <img class="img_masking" id="paper" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_%28paper%29.png">
+            <img class="img_masking" id="scissors" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock-paper-scissors_%28scissors%29.png/800px-Rock-paper-scissors_%28scissors%29.png">
+        </div>
+    </div>
+    
+    <div class="step" id="step2">
+        <div id="game-msg">Game proceeds...</div>
+    </div>
+    
+    <div class="step" id="step3">
+        <div id="round-count">Round 0</div>
+        <div id="battle">
+            <img class="icon" id="guy1" src="https://brightsunp.github.io/web_practice/node/images/left_fist.png">
+            <div id="vs">v/s</div>
+            <img class="icon" id="guy2" src="https://brightsunp.github.io/web_practice/node/images/left_fist.png">
+        </div>
+        <div id="score-container">
+            <div class="gridClass" id="left-grid">
+                <div class="pName" id="player1">You</div>
+                <div class="score" id="score1">0</div>
+            </div>
+            <div class="gridClass" id="right-grid">
+                <div class="pName" id="player2">CPU</div>
+                <div class="score" id="score2">0</div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="step" id="step4">
+        <div class="win-msg" style="display:none;">
+            <p id="winText"></p>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </div>
+</body>
+
+<script src="script_time.js"></script>
+</html>
