@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Ensure padding and margin don't affect width and height */
+    box-sizing: border-box; 
 }
 
 body {
     background-color: #a2b9bc;
-    font-family: Arial, sans-serif; /* Use a professional font */
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 3rem;
     text-align: center;
     padding-top: 10px;
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 5px; 
 }
 
 select {
@@ -25,21 +25,21 @@ select {
     padding: 0.5rem;
     border-radius: 5px;
     border: 1px solid #f7f304;
-    font-size: 1.2rem; /* Improve font size for better readability */
+    font-size: 1.2rem; 
 }
 
 #choice-msg {
     font-size: 2rem;
     height: 3rem;
     line-height: 3rem;
-    text-align: center; /* Use text-align center instead of justify-self */
+    text-align: center; 
 }
 
 #choice {
     width: 50vw;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto; /* Center align the choice container */
+    margin: 0 auto; 
 }
 
 .img_masking {
@@ -47,7 +47,7 @@ select {
     padding: 20px;
     border: 1px dashed rgba(0, 0, 0, 0.089);
     border-radius: 50%;
-    transition: border 0.3s ease; /* Smooth transition for hover effect */
+    transition: border 0.3s ease;
 }
 
 .img_masking:hover {
@@ -98,10 +98,10 @@ select {
 }
 
 .icon {
-    width: 20rem; /* Set a fixed width */
-    height: auto; /* Maintain the aspect ratio */
+    width: 20rem; 
+    height: auto;/
     object-fit: contain; /* Ensures the image fits within the defined width and height */
-    margin: 0 10px; /* Add some margin between images */
+    margin: 0 10px; 
     cursor: pointer; /* Change cursor to pointer to indicate clickability */
 }
 
@@ -210,9 +210,9 @@ select {
     width: 35vw;
     border-radius: 1rem;
     font-size: 2rem;
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Show pointer cursor */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 #reset-btn:hover {
