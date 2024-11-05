@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and margin don't affect width and height */
+}
+
+body {
+    background-color: #a2b9bc;
+    font-family: Arial, sans-serif; /* Use a professional font */
+}
+
+h1 {
+    background-color: rgb(13, 8, 78);
+    height: 4rem;
+    line-height: 3rem;
+    color: rgb(232, 248, 7);
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px; /* Add rounded corners */
+}
+
+select {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #f7f304;
+    font-size: 1.2rem; /* Improve font size for better readability */
+}
+
+#choice-msg {
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center; /* Use text-align center instead of justify-self */
+}
+
+#choice {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto; /* Center align the choice container */
+}
+
+.img_masking {
+    height: 150px;  
+    padding: 20px;
+    border: 1px dashed rgba(0, 0, 0, 0.089);
+    border-radius: 50%;
+    transition: border 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.img_masking:hover {
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+#rock {
+    padding-right: 0;
+    margin-right: 0;
+    width: 180px;
+    object-fit: contain;
+    transform: translateX(20px);
+}
+
+#game-msg, #round-count {
+    position: relative;
+    left:22vw;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 7, 102);
+    color: yellow;
+    height: 5rem;
+    width: 55vw;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+#round-count {
+    position: relative;
+    left: 32vw;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    background-color: rgb(235, 44, 18);
+    color: rgb(21, 234, 241);
+    width: 35vw;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+#battle {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 20rem; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the defined width and height */
+    margin: 0 10px; /* Add some margin between images */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+#guy1 {
+    transform: translateX(130px);
+}
+
+#guy2 {
+    transform: translateX(-30px);
+}
+
+#vs {
+    background-color: rgba(155, 155, 175, 0.5);
+    border-radius: 1rem;
+    font-size: 4rem;
+    margin: 3rem 2rem;
+    color: black;
+    height: 6rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score-container {
+    margin: 3rem auto 6.5rem; /* Center align score container */
+    width: 70vw;
+    display: flex;    
+    justify-content: space-between;
+}
+
+.gridClass {
+    display: block;
+    justify-content: center;
+    height: 4rem;
+}
+
+.pName, .score {
+    border-radius: 5%;
+    height: 4rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#left-grid {
+    transform: translateX(80px);
+    background-color: #1f0104;
+    color: #ea940c;
+}
+
+#score1 {
+    background-color: #3b0308;
+}
+
+#right-grid {
+    transform: translateX(-100px);
+    background-color: #441a3a;
+    color: #d4bdbe;
+}
+
+#score2 {
+    background-color: #6e2a5e;
+}
+
+.score {
+    width: 6.5rem;
+    transform: translateX(1.8rem);
+    background-color: inherit;
+}
+
+.win-msg {
+    display: none;
+    position: fixed;
+    height: 15rem;
+    width: 90vw; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(228, 231, 12, 0.6);
+    color: rgb(233, 11, 11);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000; 
+    font-size: 6rem;
+    line-height: 12rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win-msg p {
+    transform: translateY(-5px);
+}
+
+#reset-btn {
+    position: relative;
+    left: 32vw;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    background-color: rgb(53, 4, 85);
+    color: rgb(224, 210, 8);
+    height: 4rem;
+    width: 35vw;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#reset-btn:hover {
+    background-color: rgb(70, 5, 100); /* Change color on hover */
+}
